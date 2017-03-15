@@ -16,7 +16,20 @@ public class Exercise_11 {
 
     public static void main(String[] strings) {
 
-        //...
+        int population = 380_123_456;
+        int secondsInYear = 365*24*60*60;
+        int bornInYear = secondsInYear/6;
+        int diesInYear = secondsInYear/12;
+        int immigratesInYear = secondsInYear/40;
+        int yearsToCount = 3;
+        int currentYear = 2017;
+
+        while (yearsToCount > 0) {
+            population += bornInYear + immigratesInYear - diesInYear;
+            yearsToCount--;
+            currentYear++;
+            System.out.printf("In the year " + currentYear + ", the total population will be " + "%,d\n", population);
+        }
 
 
     }

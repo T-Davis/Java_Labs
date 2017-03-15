@@ -11,7 +11,10 @@ public class Exercise_10 {
 
     public static void main(String[] strings) {
 
-        //...
+        int kilometers = 12;
+        double minutes = 30.5;
+
+        System.out.print("You ran " + kilometers + " kilometers in " + minutes + " minutes.\nYour miles per hour is " + (kilometers/minutes*60/1.6) + ".");
 
     }
 
