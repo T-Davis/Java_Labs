@@ -13,7 +13,9 @@ public class Exercise_01 {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!\nI'm a programmer now.\nYeehaw!");
+        System.out.println("Hello World!\n" +
+                           "I'm a programmer now.\n" +
+                           "Yeehaw!");
 
     }
 }

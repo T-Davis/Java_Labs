@@ -14,7 +14,8 @@ public class Exercise_10 {
         int kilometers = 12;
         double minutes = 30.5;
 
-        System.out.print("You ran " + kilometers + " kilometers in " + minutes + " minutes.\nYour miles per hour is " + (kilometers/minutes*60/1.6) + ".");
+        System.out.print("You ran " + kilometers + " kilometers in " + minutes + " minutes.\n" +
+                         "Your miles per hour is " + (kilometers/minutes*60/1.6) + ".");
 
     }
 

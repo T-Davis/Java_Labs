@@ -14,6 +14,7 @@ public class Exercise_09 {
         double h = 6.4;
         double w = 2.4;
 
-        System.out.print("The perimeter of you parallelogram is " + ((h+w)*2) + "\nThe area of your parallelogram is " + h*w);
+        System.out.print("The perimeter of you parallelogram is " + ((h+w)*2) + "\n" +
+                         "The area of your parallelogram is " + h*w);
     }
 }
