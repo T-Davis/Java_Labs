@@ -13,4 +13,27 @@ import java.util.Scanner;
  */
 public class Exercise_07 {
 
+    public static void main(String[] args) throws java.io.IOException {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Want to know how many years and days you get by minutes?\nGive me them minutes!");
+        int minutes = input.nextInt();
+
+        minutesInTime(minutes);
+
+    }
+
+
+    private static void minutesInTime(int minutes) {
+
+        int minutesInYear = 60*24*365;
+        int minutesInDays = 60*24;
+        int years = minutes/minutesInYear;
+        int days = minutes%minutesInYear/minutesInDays;
+
+        System.out.print(minutes + " minutes equals " + years + " years and " + days + " days");
+
+    }
+
 }
+

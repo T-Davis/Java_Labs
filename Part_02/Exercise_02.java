@@ -24,5 +24,10 @@ public class Exercise_02 {
         System.out.print("Enter length: ");
         double length = input.nextDouble();
 
+        area = (2 * Math.PI * radius*length) + (2 * Math.PI * radius * radius);
+        volume = Math.PI * radius * radius * length;
+
+        System.out.print("Your cylinder has a surface area of " + area + "\n" +
+                "and a volume of " + volume);
     }
 }

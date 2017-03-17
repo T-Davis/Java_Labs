@@ -13,7 +13,15 @@ import java.util.Scanner;
 
 public class Exercise_03 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws java.io.IOException {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Input number of feet to convert to meters, then press enter ");
+        double feet = input.nextDouble();
+        double meters = feet * 0.305;
+
+        System.out.print(feet + " feet equals " + meters + " meters");
 
     }
 }

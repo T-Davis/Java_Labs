@@ -12,4 +12,35 @@ import java.util.Scanner;
  */
 public class Exercise_08 {
 
+    public static void main(String[] args) throws java.io.IOException {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Pick a number between 0 and 1,000,000,000!");
+        int num = input.nextInt();
+
+        guessNum(num);
+
+    }
+
+    private static void guessNum(int num) {
+
+        if (num >= 0 && num <= 1_000_000_000) {
+            int i = 0;
+            while (i != num) {
+                i++;
+            }
+            System.out.print("Your number is " + i);
+        }
+        else {
+            System.out.print("That is not a number between 0 and 1,000,000,000!");
+        }
+
+    }
+
+//    private static void guessNum(int num) {
+//
+//        System.out.print("Ha! Your number is " + num + "!");
+//
+//    }
+
 }

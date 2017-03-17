@@ -1,6 +1,8 @@
 package Part_02;
 
 
+import java.util.Scanner;
+
 /**
  * Part 2 Exercise 9:
  *
@@ -9,4 +11,20 @@ package Part_02;
  */
 public class Exercise_09 {
 
+    public static void main(String[] args) {
+
+        revPrintAlph();
+
+    }
+
+    private static void revPrintAlph() {
+
+        char alph = 'z';
+
+        do {
+            System.out.print(alph);
+            alph--;
+        } while (alph >= 'a');
+
+    }
 }
