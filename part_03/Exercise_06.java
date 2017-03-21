@@ -31,16 +31,15 @@ class Exercise_06 {
         long totalHours = totalMinutes / 60;
 
         // Get the current hour
-        int currentHour = (int)totalHours % 24 + timeZoneChange;
+        int currentHour = (int)totalHours + timeZoneChange % 24;
 
         // Display results using a 12 hour clock, include AM or PM
         String ampm = "am";
-        int hour = currentHour;
-        
-        if (hour > 12) {
+
+        if (timeZoneChange > 12) {
             ampm = "pm";
-            hour -= 12;
-        } else if (hour == 12) {
+            timeZoneChange -= 12;
+        } else if (timeZoneChange == 12) {
             ampm = "pm";
         }
 
@@ -54,7 +53,7 @@ class Exercise_06 {
             addSecZero = "0";
         }
 
-        System.out.print("The current time is " + hour + ":" + addMinZero + currentMinute +
+        System.out.print("The current time is " + timeZoneChange + ":" + addMinZero + currentMinute +
                 ":" + addSecZero + currentSecond + "" + ampm);
     }
 }
