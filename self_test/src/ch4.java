@@ -1,9 +1,9 @@
 /**
  * Created by tdavis on 3/20/17.
  * 1. class is a blueprint for an object, an object refers to the actual thing created when instanciating an object
- * 2.
+ * 2. by the keyword class
  * 3. all the data inside (all the variable)
- * 4. MyCounter = counter, counter = new MyCounter
+ * 4. MyCounter counter;, counter = new MyCounter;
  * 5. double myMeth( int a, int b) {}
  * 6. return value (value = whatever the type of data the method type declares i.e. int, double, String)
  * 7. the name of the class
