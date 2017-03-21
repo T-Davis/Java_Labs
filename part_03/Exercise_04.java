@@ -57,6 +57,7 @@ public class Exercise_04 {
     }
 
     public static String determineWinner(int computer, int player) {
+        if (computer == player) return "It's a draw... Try again";
 
         String status = "";
 

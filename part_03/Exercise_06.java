@@ -31,14 +31,17 @@ class Exercise_06 {
         long totalHours = totalMinutes / 60;
 
         // Get the current hour
-        int currentHour = (int)totalHours % 60 + timeZoneChange;
+        int currentHour = (int)totalHours % 24 + timeZoneChange;
 
         // Display results using a 12 hour clock, include AM or PM
         String ampm = "am";
         int hour = currentHour;
+        
         if (hour > 12) {
             ampm = "pm";
             hour -= 12;
+        } else if (hour == 12) {
+            ampm = "pm";
         }
 
         String addMinZero = "";
@@ -47,7 +50,7 @@ class Exercise_06 {
         }
 
         String addSecZero = "";
-        if (currentMinute < 10) {
+        if (currentSecond < 10) {
             addSecZero = "0";
         }
 
