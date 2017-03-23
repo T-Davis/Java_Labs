@@ -8,3 +8,12 @@ package part_04;
  loop to iterate through the array and print out each value.
 
  */
+
+class DoingItAgain {
+
+    public static void main(String[] args) {
+
+        String[] printArr = new String[] {"no", "less", "than", "five", "words"};
+        for (String x : printArr) System.out.print(x + " ");
+    }
+}

@@ -2,49 +2,78 @@
 Answer the following questions:
 
 1) What is an array?
+    a container object that holds a fixed number of values of a single type
 
 2) What the code required to create (instantiate) a String array with size 10 named "cats"?
+    String[] cats = new String[10];
 
 3) What is a multidimensional array?
+    array of arrays
 
 4) What is the code required to create (instantiate) a 2-dimensional int array that is 6 high and 6 wide named "scores"?
+    int[][] scores = new int[6][6];
 
 5) Using code, how do you retrieve a String that is the 10th item in a traditional array named dogs?
+    String dog10 = dogs[9];
 
 6) What is an ArrayIndexOutOfBoundsException?
+    when you're referencing outside of an array
 
 7) Using one line of code, demonstrate how to retrieve the second to the last item from a int array.
+    int test = intArray[intArray.length - 1]
 
 8) What is the maximum allowable size of an array in Java?
+    lots, essentially max size of int
 
 9) What is a bubble sort?
+    a super slow way to sort data. iterates through each set of elements for every element
 
 10) How does a bubble sort work?
+    compares each element to the element before it, and switches them depending on the parameters
 
 11) When might you use an irregular array? What is a good example of an irregular array?
+    idk
 
 12) Demonstrate how to iterate through an array, printing each value, using a for loop.
+    for (int x: nums) System.out.print(x + " ");
 
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
+    while(int x != nums[nums.length - 1] print...
 
 14) What is a queue?
+    fifo list of elements
 
 15) What are the two primary operations that a queue performs?
+    put get
 
 16) What is a stack?
+    filo list of elements
 
 17) What differentiates stacks and queues?
+    fifo filo
 
 18) When would you use an enhanced for loop?
+    when you are iterating through a data structure and don't need the iterator count
 
 19) What is "The Collections Framework"? What classes does it include?
+    set of classes and interfaces that implement commonly reusable collection data structures. Although referred to as
+    a framework, it works in a manner of a library. The JCF provides both interfaces that define various collections
+    and classes that implement them
 
 20) How do you iterate over a two-dimensional array? Demonstrate using psuedo code.
+    for (int x = 0; x < nums.length; x++) {
+        for (int i = 0; i < nums[x].length; i++); {
+        }
+    }
 
 21) What is a String?
+    a class that defines and supports character string as objects
 
 22) What are a few common methods for operating on Strings?
+    .length, charAt, indexOf
 
 23) What does "Strings are immutable" mean?
+    they cannot be changed
 
 24) Using the CLI, how do you invoke a Java application and provide two parameters to the main method?
+    javac to compile, java <package.name.filename>, from src, param1 param2
