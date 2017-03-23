@@ -20,7 +20,7 @@ Answer the following questions:
     when you're referencing outside of an array
 
 7) Using one line of code, demonstrate how to retrieve the second to the last item from a int array.
-    int test = intArray[intArray.length - 1]
+    int test = intArray[intArray.length - 2]
 
 8) What is the maximum allowable size of an array in Java?
     lots, essentially max size of int
@@ -32,28 +32,29 @@ Answer the following questions:
     compares each element to the element before it, and switches them depending on the parameters
 
 11) When might you use an irregular array? What is a good example of an irregular array?
-    idk
+    when you have an array of data that stores other arrays of data of variable elements
 
 12) Demonstrate how to iterate through an array, printing each value, using a for loop.
     for (int x: nums) System.out.print(x + " ");
 
 13) Demonstrate how to iterate through an array, printing each value, using a while loop.
-    while(int x != nums[nums.length - 1] print...
+    while(int x != nums.length - 1] print...
 
 14) What is a queue?
     fifo list of elements
 
 15) What are the two primary operations that a queue performs?
-    put get
+    put() and get()
 
 16) What is a stack?
     filo list of elements
 
 17) What differentiates stacks and queues?
-    fifo filo
+    fifo vs filo
 
 18) When would you use an enhanced for loop?
     when you are iterating through a data structure and don't need the iterator count
+    data structure must be a part of the java collections framework
 
 19) What is "The Collections Framework"? What classes does it include?
     set of classes and interfaces that implement commonly reusable collection data structures. Although referred to as

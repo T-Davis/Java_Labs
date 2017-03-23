@@ -12,10 +12,9 @@ class Exercise_04 {
 
         int min = 0;
         int max = 0;
-        int t, i;
 
-        for (t=0; t < table.length; t++) {
-            for (i=0; i < table[t].length; i++) {
+        for (int t=0; t < table.length; t++) {
+            for (int i=0; i < table[t].length; i++) {
                 if (table[t][i] < min) min = table[t][i];
                 if (table[t][i] > max) max = table[t][i];
             }

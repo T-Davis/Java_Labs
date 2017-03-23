@@ -16,11 +16,10 @@ class ArrayFun {
 
     public static void main(String[] args) {
 
-        int t, i;
         int table[][] = new int[5][10];
 
-        for(t=0; t < table.length; t++) {
-            for(i=0; i < table[t].length; i++) {
+        for (int t=0; t < table.length; t++) {
+            for (int i=0; i < table[t].length; i++) {
                 table[t][i] = t * 10 + i;
                 System.out.print(table[t][i] + " ");
             }
