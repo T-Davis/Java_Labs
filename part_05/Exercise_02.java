@@ -8,3 +8,25 @@ package part_05;
  * flow of execution and the varying state of each private variable. You can name these classes whatever you want.
  *
  */
+
+//class Class21 {
+//
+//    Class2 class2in1 = new Class2();
+//
+//    void class1meth(class2in1) {
+//
+//    }
+//
+//    public static void main(String[] args) {
+//
+//
+//
+//    }
+//
+//}
+//
+//class Class22 {
+//
+//
+//
+//}

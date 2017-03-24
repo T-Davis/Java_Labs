@@ -2,61 +2,93 @@
 Answer the following:
 
 1) What are the access control modifiers (acm) provided in Java?
+    public private protected
 
 2) Briefly explain each acm and how they differentiate from each other?
+    public - available everywhere, includes outside package
+    protected - in class, package, subclass (extends)
+    default - class and package
+    private - just class
 
 3) Why do we use acm's?
+    security, encapsulation
 
 4) What is the risk of not using acm's?
+    H4CkrZ! Your data can be changed when you don't want it to be
 
 5) Write a method signature that receives an object of type "Car" as a parameter.
+    void thisMeth(Car wheels) {}
 
 6) Write a method signature that returns an object of type "Car".
+    Car thisMeth(Car wheels) {}
 
 7) What is a very important consideration to keep in mind when passing objects (hint: by reference) from one
 method to another?
+    you don't pass object variables, you pass references to the object
 
 8) What is method overloading?
+    methods of the same name that take in different parameters
 
 9) Why is method overloading useful? (Hint: as compared to the implementation in the C language.)
+    you can use reuse the same logic for different input - receiving doubles, ints, shorts, etc
 
 10) How do you overload a method? What signifies that a method is being overloaded?
+    same name, different param type or number
 
 11) Below, by writing just the method signature, demonstrate overloading a method 3 times.
+    void meth(int param1) {}
+    void meth(int param1, int param2) {}
+    void meth(double param1, double param2) {}
 
 12) How do you overload a constructor? What signifies that a constructor is being overloaded?
+    same as 10
 
 13) Why do we overload constructors?
+    to take in different parameters without rebuilding logic
 
 14) Below, by writing just the constructor signature, demonstrate overloading a constructor 3 times.
+    MyClass() {}, MyClass(int param) {}, MyClass(double param) {}
 
 15) What is recursion?
+    calling the method your currently in
 
 16) What important considerations must you keep in mind when using recursion?
+    can use up a lot of memory, it builds a copy of the method each time it's called
 
 17) How do you make a method recursive?
+    call the method inside of the method
 
 18) How do you escape a recursive method?
+    if statement, iterate to if statement breaking point
 
 19) Explain what "static" is all about?
+    static variables or methods go live at beginning of program, just like main
 
 20) When should you use "static"?
+    when something needs to be active or done before objects are made - logic that objects rely on
 
 21) What differentiates static variables from instance variables?
+    instance vars aren't usable until an object of the class has been created
 
 22) What is a the quicksort? Briefly describe how the quicksort works.
+    grab a index somewhere around the middle, sort to both sides of middle index, repeat for each half, each quarter...
 
 23) What is a nested, or inner, class?
+    a class inside another class
 
 24) What is the scope of a nested class?
+    can access all of the outer class' members
 
 25) What is a variable-arity method?
+    method that takes an arbitrary number of params
 
 26) What makes a variable-arity method unique? When should you use it?
+    see 25, use it when you don't have a def number of params or a set size array
 
 27) What is the shorthand name for variable-arity?
+    varargs
 
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
-
+    could mess with constructors, possibly other issues
 
 
