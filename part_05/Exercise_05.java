@@ -7,3 +7,24 @@ package part_05;
  * out "Hello Recursion!" 10 times.
  *
  */
+
+class Recursion {
+
+    void recMeth(int x) {
+
+        if (x == 0)
+            return;
+
+        System.out.println("Hello Recursion");
+        recMeth(--x);
+    }
+
+
+        public static void main(String[] args) {
+
+            Recursion test = new Recursion();
+
+            test.recMeth(10);
+
+    }
+}

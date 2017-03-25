@@ -62,7 +62,8 @@ method to another?
     if statement, iterate to if statement breaking point
 
 19) Explain what "static" is all about?
-    static variables or methods go live at beginning of program, just like main
+    static variables or methods go live at beginning of program, just like main, and all members get the same version
+    of that variable/method/etc
 
 20) When should you use "static"?
     when something needs to be active or done before objects are made - logic that objects rely on
@@ -74,7 +75,7 @@ method to another?
     grab a index somewhere around the middle, sort to both sides of middle index, repeat for each half, each quarter...
 
 23) What is a nested, or inner, class?
-    a class inside another class
+    a class inside another class. Is a member of the outer class, has access to all outer class
 
 24) What is the scope of a nested class?
     can access all of the outer class' members
@@ -89,6 +90,6 @@ method to another?
     varargs
 
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
-    could mess with constructors, possibly other issues
+    could mess with constructors (overloading), can only be one vararg per method
 
 
