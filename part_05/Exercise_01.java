@@ -16,6 +16,30 @@ package part_05;
 
 class Chase {
 
+    public static Cat[] createCatArr(int size) {
+
+        Cat catOne;
+
+
+
+        Cat[] catArr = new Cat[size];
+        for (int x = 0; x < catArr.length; x++) {
+
+            catOne = new Cat();
+            catOne.setSize(8);
+            catOne.setColor("black");
+            catOne.setSize(8);
+            catOne.setType("fat");
+
+            catArr[x] = catOne;
+        }
+
+        for (Cat y : catArr) System.out.println(y.toString());
+        return catArr;
+
+
+    }
+
     public static void main(String[] args) {
 
         Dog oneDog = new Dog();
@@ -23,9 +47,13 @@ class Chase {
         oneDog.setColor("brown");
         oneDog.setSize(10);
         oneDog.setType("lab");
+        oneDog.setFleas(10);
 
-         Cat[] firstCatArr = oneDog.createCatArr(3);
+        Cat[] firstCatArr = createCatArr(3);
+
+
     }
+
 }
 
 class Dog {
@@ -33,6 +61,7 @@ class Dog {
     private String type;
     private String color;
     private int size;
+    private Fleas[] fleas;
 
     public String getType() {
         return type;
@@ -58,18 +87,14 @@ class Dog {
         this.size = size;
     }
 
-
-    public Cat[] createCatArr(int size) {
-
-        Cat[] catArr = new Cat[size];
-
-//        catOne.setSize(8);
-//        catOne.setColor("black");
-//        catOne.setSize(8);
-//        catOne.setType("fat");
-        return catArr;
+    public Fleas[] getFleas() {
+        return fleas;
     }
 
+    public void setFleas(int size) {
+        Fleas fleas = new Fleas();
+        this.fleas = fleas.getFleas(size);
+    }
 }
 
 class Cat {
@@ -101,5 +126,27 @@ class Cat {
     public void setSize(int size) {
         this.size = size;
     }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "type='" + type + '\'' +
+                ", color='" + color + '\'' +
+                ", size=" + size +
+                '}';
+    }
 }
 
+
+class Fleas {
+
+    public Fleas[] getFleas(int size) {
+
+        Fleas[] fleas = new Fleas[size];
+        for (int i = 0; i < size; i++) {
+            fleas[i] = new Fleas();
+        }
+
+        return fleas;
+    }
+}

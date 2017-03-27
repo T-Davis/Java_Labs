@@ -17,7 +17,7 @@ class Run {
 
         one.setName("app1");
         one.setSize(1);
-        one.setDownloaded(true); //static instance var set
+        App.setDownloaded(true);
 
         System.out.println(one.toString());
 
@@ -41,7 +41,7 @@ class App {
 
     private String name;
     private double size;
-    private boolean downloaded;
+    private static boolean downloaded;
 
     public String getName() {
         return name;
@@ -63,8 +63,8 @@ class App {
         return downloaded;
     }
 
-    public void setDownloaded(boolean downloaded) {
-        this.downloaded = downloaded;
+    public static void setDownloaded(boolean dl) {
+        downloaded = dl;
     }
 
     @Override
