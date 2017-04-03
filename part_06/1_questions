@@ -25,7 +25,7 @@
 
 9) What is dynamic method dispatch?
     when a method is decided upon at runtime based on the type of object that's calling.
-    it's dynamic because the jvm binds objects at runtime instead of compiletime. So a object that changes
+    it's dynamic because the jvm binds objects at runtime instead of compiletime. So an object that changes
     type and calls a method will call the method of the type it is, potentially overriding it's original type's method
 
 10) What does the "final" keyword do?
